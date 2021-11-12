@@ -12,6 +12,7 @@ const footer={
     // height:'40vh',
     marginTop:'15px',
     // marginBottom:'10px'
+    padding:'2%'
 }
 const Footer = () => {
     return (
@@ -19,42 +20,42 @@ const Footer = () => {
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 
                 <Grid item xs={12} sm={12} md={3} >
-                    <Typography>
-                        <h3>Services</h3>
-                        <h5>Web design</h5>
-                        <h5>Development</h5>
-                        <h5>Hosting</h5>
-                    </Typography>
+                    <div>
+                        <h5>Services</h5>
+                        <p>Web design</p>
+                        <p>Development</p>
+                        <p>Hosting</p>
+                    </div>
 
                 </Grid>
 
 
                 <Grid item xs={12} sm={12} md={3} >
-                    <Typography>
-                        <h3>About</h3>
-                        <h5>Company</h5>
-                        <h5>Team</h5>
-                        <h5>Legacy</h5>
-                    </Typography>
+                    <div>
+                        <h5>About</h5>
+                        <p>Company</p>
+                        <p>Team</p>
+                        <p>Legacy</p>
+                    </div>
                 </Grid>
 
 
                 <Grid item xs={12} sm={12} md={3} >
-                    <Typography>
-                        <h3>Careers</h3>
-                        <h5>Job openings</h5>
-                        <h5>Employee success</h5>
-                        <h5>Benefits</h5>
-                    </Typography>
+                    <div>
+                        <h5>Careers</h5>
+                        <p>Job openings</p>
+                        <p>Employee success</p>
+                        <p>Benefits</p>
+                    </div>
                 </Grid>
 
                 <Grid item xs={12} sm={12} md={3} >
                    <Box sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
                    
-                   <Typography sx={{mx: 2}}> <i class="fab fa-facebook fa-2x"></i></Typography>
-                   <Typography> <i class="fab fa-twitter fa-2x"></i></Typography>
-                   <Typography sx={{mx: 2}}><i class="fab fa-youtube fa-2x"></i></Typography>
-                   <Typography sx={{mx: 1}}><i class="fab fa-linkedin fa-2x"></i></Typography>
+                   <span className="mx-2" > <i class="fab fa-facebook fa-2x"></i></span>
+                   <span className="mx-2"> <i class="fab fa-twitter fa-2x"></i></span>
+                   <span className="mx-2"><i class="fab fa-youtube fa-2x"></i></span>
+                   <span className="mx-2"><i class="fab fa-linkedin fa-2x"></i></span>
                 
                    </Box>
                    

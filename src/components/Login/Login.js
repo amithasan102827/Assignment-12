@@ -38,7 +38,7 @@ const Login = () => {
        singInWithGoogle(location,history);
   }
   return (
-    <Container sx={{ flexGrow: 1 }}>
+    <Container style={{marginBottom:'60px'}} sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
 
         <Grid style={{ marginTop: '100px' }} item xs={12} sm={12} md={6}  >
@@ -67,7 +67,7 @@ const Login = () => {
               
           </Box>
               {
-                user.email && <Alert severity="success">user login successfully</Alert>
+                user.email && <Alert style={{marginTop:'20px'}} severity="success">user login successfully</Alert>
               }
               {/* {
                 authError && <Alert severity="error">This is an error alert — check it out!</Alert>

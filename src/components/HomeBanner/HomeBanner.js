@@ -4,6 +4,7 @@ import { border, Box } from '@mui/system';
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import bg from '../../images/banner.jpg'
+import NavigationBootstrap from '../NavigationBootstrap/NavigationBootstrap';
 
 
 const bannerBg = {
@@ -31,15 +32,18 @@ const text = {
 const HomeBanner = () => {
 
     return (
-
-        <Container style={bannerBg} sx={{mb: 5}}  >
+        <>
+        
+        <div style={bannerBg} sx={{mb: 3}}  >
+            
             <Box  sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Typography style={text}><h1 style={{fontSize:'4vw'}}>Find Your Best Car Here</h1>
                         <p style={{fontSize:'2vw'}}>And I'm a Photographer</p></Typography>
                 </Grid>
             </Box>
-        </Container>
+        </div>
+        </>
 
     );
 };

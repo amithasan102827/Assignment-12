@@ -15,13 +15,15 @@ import DashBoard from './components/DashBoard/DashBoard';
 import ExploreAllCars from './components/ExploreAllCars/ExploreAllCars';
 import AllCarDetails from './components/AllCarDetails/AllCarDetails';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import NavigationBootstrap from './components/NavigationBootstrap/NavigationBootstrap';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-
+<NavigationBootstrap></NavigationBootstrap>
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -51,8 +53,9 @@ function App() {
             <Route path="/exploreAllCars">
              <ExploreAllCars></ExploreAllCars>
             </Route>
-
+         
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>

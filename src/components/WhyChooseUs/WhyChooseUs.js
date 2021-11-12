@@ -12,7 +12,7 @@ import { margin } from '@mui/system';
 
 const WhyChooseUs = () => {
     return (
-        <Container style={{backgroundColor:'#DDF5F4 ',}} >
+        <div className="container mt-4" style={{backgroundColor:'#DDF5F4 ',}} >
             <h2>Why Choose Us</h2>
             <Box style={{ marginBottom: "50px" }} sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 12, sm: 8, md: 12 }}>
@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
 
                 </Grid>
             </Box>
-        </Container>
+        </div>
     );
 };
 

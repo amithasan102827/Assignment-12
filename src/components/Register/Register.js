@@ -37,7 +37,7 @@ const Register = () => {
     }
 
     return (
-        <Container sx={{ flexGrow: 1 }}>
+        <Container style={{marginBottom:'70px'}} sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
 
                 <Grid style={{ marginTop: '100px' }} item xs={12} sm={12} md={6}  >
