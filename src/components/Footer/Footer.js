@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
+import './Footer.css';
 
 
 const footer={
@@ -14,58 +15,59 @@ const footer={
     // marginBottom:'10px'
     padding:'2%'
 }
+
+
 const Footer = () => {
     return (
-        <Box style={footer} sx={{ flexGrow: 1 }}>
-            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-
-                <Grid item xs={12} sm={12} md={3} >
+        <div className="backgroudColor mt-4 p-2 ">
+            <div className="row mx-4 mt-5 ">
+                <div className="col-md-4">
                     <div>
-                        <h5>Services</h5>
-                        <p>Web design</p>
-                        <p>Development</p>
-                        <p>Hosting</p>
+                        <h4>Classic Motors Ltd. </h4>
+                        <span>Getting a car gives you the freedom to commute anywhere you need to</span>
                     </div>
-
-                </Grid>
-
-
-                <Grid item xs={12} sm={12} md={3} >
                     <div>
-                        <h5>About</h5>
-                        <p>Company</p>
-                        <p>Team</p>
-                        <p>Legacy</p>
+                        <i class="fab fa-facebook icon"></i>
+                        <i class="fab fa-twitter icon"></i>
+                        <i class="fab fa-youtube icon"></i>
+                        <i class="fab fa-linkedin icon"></i>
                     </div>
-                </Grid>
-
-
-                <Grid item xs={12} sm={12} md={3} >
+                </div>
+                <div className="col-md-4">
                     <div>
-                        <h5>Careers</h5>
-                        <p>Job openings</p>
-                        <p>Employee success</p>
-                        <p>Benefits</p>
+                        <h4>Useful Links</h4>
+                      
+                     <p>  <span> Premises</span></p>
+                       <p> <span>FAQ's</span></p>
+                       <p> <span>Appointment</span></p>
                     </div>
-                </Grid>
+                </div>
+                <div className="col-md-4">
+                    <div>
+                        <h4>Quick Contact</h4>
+                        <div>
+                          <p>
+                               <i class="fas fa-map-marked-alt contact-icon"></i>
+                             A108 Demo Street New York, NY 535022, United States
+                             classicmotor@gmail.com
+                                +1 234 567 8910
+                                2021 © classicmoter. Design by Amit Hasan.</p>
+                              <p>
+                                <i class="fas fa-envelope-open-text contact-icon"></i>
+                                    classicmotor@gmail.com
+                                    </p>
+                                <p>
+                                <i class="fas fa-phone contact-icon"></i>
+                                    +12345678910
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4">
 
-                <Grid item xs={12} sm={12} md={3} >
-                   <Box sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                   
-                   <span className="mx-2" > <i class="fab fa-facebook fa-2x"></i></span>
-                   <span className="mx-2"> <i class="fab fa-twitter fa-2x"></i></span>
-                   <span className="mx-2"><i class="fab fa-youtube fa-2x"></i></span>
-                   <span className="mx-2"><i class="fab fa-linkedin fa-2x"></i></span>
-                
-                   </Box>
-                   
-                    
-                   
-                   
-                </Grid>
-
-            </Grid>
-        </Box>
+                </div>
+            </div>
+        </div>
     );
 };
 

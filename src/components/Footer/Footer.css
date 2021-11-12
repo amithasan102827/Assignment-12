@@ -1,0 +1,17 @@
+.backgroudColor{
+    background-color: rgb(10, 104, 104);
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    margin-top:20px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.contact-icon{
+    margin-right: 5px;
+}

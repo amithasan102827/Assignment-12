@@ -13,12 +13,12 @@ const Home = () => {
     return (
         <div>
           
-            {/* <NavigationBootstrap></NavigationBootstrap> */}
+            <NavigationBootstrap></NavigationBootstrap>
             <HomeBanner></HomeBanner>
             <Cars></Cars>
             <Reviews></Reviews>
             <WhyChooseUs></WhyChooseUs>
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
             
         </div>
     );

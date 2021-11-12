@@ -56,7 +56,7 @@ function DashBoard(props) {
             {!admin && <List >
                 <Link style={{ textDecoration: 'none', color: '' }} to="/"> <Button color="inherit">Home</Button> </Link> <br />
 
-                <Link style={{ textDecoration: 'none', color: '' }} to={`${url}`}> <Button color="inherit">MyOrders</Button> </Link> <br />
+                <Link style={{ textDecoration: 'none', color: '' }} to={`${url}/myOrders`}> <Button color="inherit">MyOrders</Button> </Link> <br />
 
                 <Link style={{ textDecoration: 'none', color: '' }} to={`${url}/addReview`}> <Button color="inherit">AddReview</Button> </Link> <br />
 
@@ -82,7 +82,7 @@ function DashBoard(props) {
                 <Link style={{ textDecoration: 'none', color: '' }} to={`${url}/makeAdmin`}> <Button color="inherit">MakeAdmin</Button> </Link> <br />
 
                 {
-                    user.email && <NavLink style={{ textDecoration: 'none', color: 'red' }} to=""> <Button style={{ fontSize: '1.1vw' }} onClick={logOut} color="inherit">Logout</Button> </NavLink>
+                    user.email && <NavLink style={{ textDecoration: 'none', color: 'red' }} to=""> <Button  onClick={logOut} color="inherit">Logout</Button> </NavLink>
                 }
 
             </List>}
@@ -181,7 +181,7 @@ function DashBoard(props) {
             >
                 <Toolbar />
                 <Switch>
-                    <Route exact path={path}>
+                    <Route exact path={`${path}/myOrders`}>
                         <MyOrders></MyOrders>
                     </Route>
                     <Route path={`${path}/addReview`}>

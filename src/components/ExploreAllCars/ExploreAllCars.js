@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import ExploreAllCar from '../ExploreAllCar/ExploreAllCar';
 import useAuth from '../Hooks/useAuth';
+import NavigationBootstrap from '../NavigationBootstrap/NavigationBootstrap';
 
 
 
@@ -103,9 +104,11 @@ const ExploreAllCars = () => {
             .then(data => setAllCars(data))
     }, [])
     return (
+        <>
+        <NavigationBootstrap></NavigationBootstrap>
         <div>
             <Container sx={{ mb: 6 }}>
-            <h2>All Brand Cars</h2>
+            <h2>All Brands Car</h2>
             {!isLoading && <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3, sm: 2 }} columns={{ xs: 12, sm: 12, md: 12 }}>
 
@@ -126,6 +129,7 @@ const ExploreAllCars = () => {
             }
         </Container>
         </div>
+        </>
     );
 };
 

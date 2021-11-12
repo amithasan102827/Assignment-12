@@ -2,12 +2,13 @@ import { Button, Grid, TextField, Typography, Container, Alert, CircularProgress
 import { Box } from '@mui/system';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import registerImg from '../../images/login.jpg'
+import registerImg from '../../images/login2.png'
 import useAuth from '../Hooks/useAuth';
 import {
     useHistory,
     useLocation
   } from "react-router-dom";
+import NavigationBootstrap from '../NavigationBootstrap/NavigationBootstrap';
 
 const Register = () => {
 
@@ -37,13 +38,15 @@ const Register = () => {
     }
 
     return (
+        <>
+        <NavigationBootstrap></NavigationBootstrap>
         <Container style={{marginBottom:'70px'}} sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
 
-                <Grid style={{ marginTop: '100px' }} item xs={12} sm={12} md={6}  >
-                    <Box sx={{ boxShadow: 4 }} style={{ height: '75vh', width: '60%', marginLeft: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                      { !isLoading && <form onSubmit={handleRegister} >
-                            <Typography style={{ marginBottom: '40px' }} variant="h6" gutterBottom>
+                <Grid  style={{ marginTop: '50px' }} item xs={12} sm={12} md={6}  >
+                    <Box sx={{ boxShadow: 3 }}  style={{ height: '75vh', width: '60%', marginLeft: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                      { !isLoading && <form  onSubmit={handleRegister} >
+                            <Typography  variant="h6" gutterBottom>
                                 Register
                             </Typography>
                             <TextField style={{ width: '75%', margin: '10px' }} id="standard-basic" name="name" label="Your name" variant="standard" onBlur={handleonBlur} />
@@ -72,10 +75,11 @@ const Register = () => {
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
-                    <img style={{ width: '100%', height: '80vh', marginTop: "13%" }} src={registerImg} alt="" />
+                    <img style={{ width: '100%', height: '80vh', marginTop: "4%" }} src={registerImg} alt="" />
                 </Grid>
             </Grid>
         </Container>
+        </>
     );
 };
 

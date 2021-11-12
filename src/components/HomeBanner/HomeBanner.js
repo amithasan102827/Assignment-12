@@ -39,7 +39,7 @@ const HomeBanner = () => {
             <Box  sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Typography style={text}><h1 style={{fontSize:'4vw'}}>Find Your Best Car Here</h1>
-                        <p style={{fontSize:'2vw'}}>And I'm a Photographer</p></Typography>
+                        <p style={{fontSize:'2vw'}}>Classic Motors Ltd.</p></Typography>
                 </Grid>
             </Box>
         </div>

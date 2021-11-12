@@ -32,7 +32,7 @@ const Car = ({ car }) => {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <NavLink to={`/carDetails/${_id}`}>
+          <NavLink style={{textDecoration:'none'}} to={`/carDetails/${_id}`}>
             <Button size="small" color="primary">
               Buy Now
             </Button>

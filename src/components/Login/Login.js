@@ -5,13 +5,14 @@ import Grid from '@mui/material/Grid';
 
 import { Alert, Button, CircularProgress, Container, TextField, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import loginImg from '../../images/login.jpg'
+import loginImg from '../../images/login2.png'
 
 import {
   useHistory,
   useLocation
 } from "react-router-dom";
 import useAuth from '../Hooks/useAuth';
+import NavigationBootstrap from '../NavigationBootstrap/NavigationBootstrap';
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
@@ -38,10 +39,12 @@ const Login = () => {
        singInWithGoogle(location,history);
   }
   return (
+    <>
+    <NavigationBootstrap></NavigationBootstrap>
     <Container style={{marginBottom:'60px'}} sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
 
-        <Grid style={{ marginTop: '100px' }} item xs={12} sm={12} md={6}  >
+        <Grid style={{ marginTop: '50px' }} item xs={12} sm={12} md={6}  >
           <Box sx={{ boxShadow: 3 }} style={{ height: '70vh', width: '60%', marginLeft: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
            { !isLoading && <form onSubmit={handleLogin}  >
@@ -75,10 +78,11 @@ const Login = () => {
 
         </Grid>
         <Grid item xs={12} sm={12} md={6}>
-          <img style={{ width: '100%', height: '80vh', marginTop:"13%" }} src={loginImg} alt="" />
+          <img style={{ width: '100%', height: '80vh', marginTop:"4%" }} src={loginImg} alt="" />
         </Grid>
       </Grid>
     </Container>
+    </>
   );
 };
 
