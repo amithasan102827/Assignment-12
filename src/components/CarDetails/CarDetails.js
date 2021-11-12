@@ -8,6 +8,7 @@ import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Cont
 import useAuth from '../Hooks/useAuth';
 import { useForm } from 'react-hook-form';
 import { shadows } from '@mui/system';
+import NavigationBootstrap from '../NavigationBootstrap/NavigationBootstrap';
 
 
 const CarDetails = () => {
@@ -60,6 +61,8 @@ const CarDetails = () => {
 
 
     return (
+        <>
+        <NavigationBootstrap></NavigationBootstrap>
         <Container sx={{ mb: 3 }}>
             <h2>Book Your Car</h2>
             <Box sx={{ flexGrow: 1 }}>
@@ -126,6 +129,7 @@ const CarDetails = () => {
                 </Grid>
             </Box>
         </Container>
+        </>
     );
 };
 
