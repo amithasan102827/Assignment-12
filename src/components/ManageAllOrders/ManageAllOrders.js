@@ -13,6 +13,8 @@ import { Button, Container, Grid } from '@mui/material';
 const ManageAllOrders = () => {
    
     const { user,admin } = useAuth();
+    const [success,setSuccess]=useState(false);
+    
 
     const [allOrders, setAllMyOrders] = useState([]);
     useEffect(() => {
@@ -38,11 +40,13 @@ const ManageAllOrders = () => {
         })
     }
 
+   
+
     return (
         <Container>
             <h2>Manage All Orders</h2>
               <div>
-                <Table  responsive="lg" className="table table-info table-striped">
+                <Table  responsive="sm" className="table table-info table-striped">
                     <thead>
                         <tr>
 
@@ -52,7 +56,9 @@ const ManageAllOrders = () => {
                             <th>Phone</th>
 
                             <th>Address</th>
+                            
                             <th>Action</th>
+                          
 
                         </tr>
 
@@ -68,7 +74,10 @@ const ManageAllOrders = () => {
                                 <td>${allOrder?.carprice}</td>
                                 <td>{allOrder?.phone}</td>
                                 <td>{allOrder?.address}</td>
+                               
                                 <td><Button onClick={() => handelDelete(allOrder._id)} variant="contained" style={{ backgroundColor: '#F93E57', color: '#FFFFFF' }}>Delete</Button></td>
+
+                                
                             </tr>
 
 

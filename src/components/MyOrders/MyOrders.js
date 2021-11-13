@@ -52,7 +52,9 @@ const MyOrders = () => {
                             <th>Phone</th>
 
                             <th>Address</th>
+                           
                             <th>Action</th>
+                            
 
                         </tr>
 
@@ -68,6 +70,7 @@ const MyOrders = () => {
                                 <td>${myOrder?.carprice}</td>
                                 <td>{myOrder?.phone}</td>
                                 <td>{myOrder?.address}</td>
+                                
                                 <td><Button onClick={() => handelDelete(myOrder._id)} variant="contained" style={{ backgroundColor: '#F93E57', color: '#FFFFFF' }}>Delete</Button></td>
                             </tr>
 
