@@ -115,7 +115,7 @@ const CarDetails = () => {
 
                                 <input type='text' placeholder="Your Address"  {...register("address")} style={{ width: '60%', height: '6vh', margin: '10px' }} /> <br />
 
-                                <input defaultValue="pending" type='text'   {...register("status")} style={{ width: '60%', height: '6vh', margin: '10px' }} /> <br />
+                                
 
 
 
