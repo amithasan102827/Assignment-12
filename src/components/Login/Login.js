@@ -56,7 +56,7 @@ const Login = () => {
               <TextField style={{ width: '75%', margin: '10px' }} id="standard-basic" onChange={handleOnChange} type="password" name="password" label="Your Password" variant="standard" />
               <Button type="submit" variant="contained" style={{ width: '75%', margin: '10px', marginTop: '20px' }}>Login</Button>
 
-              <NavLink style={{ textDecoration: 'none' }} to="/register"><Button href="#text-buttons">New User? Please Register</Button></NavLink>
+              <NavLink style={{ textDecoration: 'none' }} to="/register"><Button href="#text-buttons">New User? Please Register</Button></NavLink> <br />
                  
 
               <Button onClick={handleGoogleLogin} variant="contained">Google SingIn</Button>

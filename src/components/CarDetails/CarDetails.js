@@ -63,8 +63,8 @@ const CarDetails = () => {
     return (
         <>
         <NavigationBootstrap></NavigationBootstrap>
-        <Container sx={{ mb: 3 }}>
-            <h2>Book Your Car</h2>
+        <div className="container" sx={{ mb: 3 }}>
+            <h2 className="text-primary">Book Your Car</h2>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 12, sm: 12, md: 12 }}>
 
@@ -128,7 +128,7 @@ const CarDetails = () => {
 
                 </Grid>
             </Box>
-        </Container>
+        </div>
         </>
     );
 };
