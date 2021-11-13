@@ -41,7 +41,7 @@ const Reviews = () => {
 
     return (
         <div className="container" sx={{mb: 6}}>
-            <h2>Customers Reviews</h2>
+            <h2 className="text-info">Customers Reviews</h2>
          {!isLoading && <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={{ xs: 2, md: 3, sm: 2}} columns={{ xs:12, sm: 12, md: 12 }}>
      

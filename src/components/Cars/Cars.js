@@ -64,7 +64,7 @@ const Cars = () => {
 
     return (
         <div className="container mt-3 mb-5"  sx={{ mb: 6 }}>
-            <h2 className="">Our New Cars</h2>
+            <h2 className="text-success">Our New Cars</h2>
             {!isLoading && <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3, sm: 2 }} columns={{ xs: 12, sm: 12, md: 12 }}>
 

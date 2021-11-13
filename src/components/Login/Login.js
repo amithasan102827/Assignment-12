@@ -41,7 +41,7 @@ const Login = () => {
   return (
     <>
     <NavigationBootstrap></NavigationBootstrap>
-    <Container style={{marginBottom:'60px'}} sx={{ flexGrow: 1 }}>
+    <div className="container" style={{marginBottom:'60px'}} sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
 
         <Grid style={{ marginTop: '50px' }} item xs={12} sm={12} md={6}  >
@@ -81,7 +81,7 @@ const Login = () => {
           <img style={{ width: '100%', height: '80vh', marginTop:"4%" }} src={loginImg} alt="" />
         </Grid>
       </Grid>
-    </Container>
+    </div>
     </>
   );
 };

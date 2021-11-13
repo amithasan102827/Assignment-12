@@ -27,7 +27,7 @@ const ExploreAllCar = ({car}) => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <NavLink to={`/allCarDetails/${_id}`}>
+            <NavLink style={{textDecoration:'none'}} to={`/allCarDetails/${_id}`}>
               <Button size="small" color="primary">
                 Buy Now
               </Button>
